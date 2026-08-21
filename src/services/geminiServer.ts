@@ -3,7 +3,7 @@ import { GoogleGenAI, ThinkingLevel, Type, type Schema } from "@google/genai";
 import type { ChatMessage } from "@/types/chat";
 import type { PatientInfo, AiNandaDiagnosis } from "@/types/analysis";
 
-const MODEL = "gemini-3.5-flash-lite";
+const MODEL = "gemini-3.5-flash";
 
 // Fuentes del catálogo NANDA-I 2024-2026 que la IA consulta en vivo (herramienta
 // url_context) en vez de matchear contra un catálogo local — así los códigos y
