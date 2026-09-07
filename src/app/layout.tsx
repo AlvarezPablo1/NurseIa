@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter, DM_Serif_Display } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -33,6 +35,8 @@ export default function RootLayout({
         className={`${inter.variable} ${dmSerifDisplay.variable} h-full font-sans antialiased`}
       >
         {children}
+        <Analytics />
+        <SpeedInsights />
         <Toaster position="bottom-right" />
       </body>
     </html>
